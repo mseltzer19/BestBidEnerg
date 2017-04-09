@@ -8,8 +8,7 @@ namespace ConsoleApp1.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseSqlServer(
-                @"Server = (localdb)\MSSQLLocalDB;Database=BestBidDb;"
-                + "Trusted_Connection=True;");
+                @"Server=tcp:bestbidenergy.database.windows.net,1433;Initial Catalog=BestBidEnergy;Trusted_Connection=True;");
         }
     }
 }
